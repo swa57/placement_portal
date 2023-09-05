@@ -1,0 +1,301 @@
+.page-container {
+  min-height: 100vh; /* Ensure it covers at least the viewport height */
+  background-color:linear-gradient(to bottom, #2980b9, #6dd5fa); /* Replace with your desired background color */
+  display: flex;
+  flex-direction: column; /* Makes sure children stack vertically */
+  overflow: hidden;
+}
+.signup-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px; /* Adjust the right margin as needed */
+  margin-right: 20px;
+}
+
+/* Use flexbox to create a two-column layout */
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+background: linear-gradient(to bottom, #2980b9, #6dd5fa);
+}
+.signup-content {
+  padding: 40px; /* Increase padding for more space */
+  text-align: left; /* Align the content to the left */
+  width: 300px;
+  height: 260px; /* Increase height for more space */
+  position: relative; /* Add relative positioning to the container */
+  background-color: transparent; /* Transparent background color */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove shadow */
+  max-height: 200px; /* Add max-height to enable scrolling */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds the height */
+}
+.signup-content::-webkit-scrollbar {
+  width: 4px;
+  
+}
+
+.signup-content::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #888;
+}
+
+.signup-content::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
+  border-radius: 4px;
+}
+
+.signup-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+/* Style the left-side image container */
+.signup-image-container {
+  max-width: 50%;
+  display: flex;
+  align-items: center; 
+  margin-left: -80px;
+}
+
+/* Style the image with a corner shape and light shadow */
+.signup-image {
+  max-width: 80%;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} 
+
+.portal-text {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  animation: colorChange 2s linear infinite alternate; /* Add animation */
+}
+
+/* Define the animation keyframes */
+@keyframes colorChange {
+  from {
+    color: #d2d200; /* Start color (a shade of blue) */
+  }
+  to {
+    color: #e622b2; /* End color (a shade of orange) */
+  }
+}
+
+/* Style the "Create an Account" text at the top-center */
+.create-account-container {
+  text-align: center;
+  margin-top: 30px; /* Adjust margin-top for more spacing */
+}
+
+.create-account-text {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+/* Style the input container for Email, Password, and Confirm Password */
+.input-container {
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="confirmPassword"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px; /* Adjust margin-top for spacing */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+  border: 1px solid #ccc;
+}
+
+/* Style the signup button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px; /* Add padding for spacing */
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* Center the button and add margin for spacing */
+}
+
+/* Style the "New User?" line at the bottom-center */
+.new-user-text {
+  position: absolute;
+  bottom: 20px; /* Add margin to the bottom for spacing */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.signup-button {
+  background-color: #0a0a09; /* Change to your desired button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 5px auto;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background-color: #ff4500; /* Change to a different color on hover if desired */
+}
+/* Style the input container for Skill Matrix and Resume Upload */
+.input-container.password-style {
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Apply the label style to the new input fields */
+.input-container.password-style label {
+  font-size: 14px;
+}
+
+/* Apply the input style to the new input fields */
+.input-container.password-style input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px; /* Adjust margin-top for spacing */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+  border: 1px solid #ccc;
+}
+.file-input-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  height: 50px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #fff; /* White background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Black shadow */
+}
+
+.file-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100%;
+}
+
+.file-selected {
+  height: 35px; /* Adjust the height to match the Skill Matrix box */
+}
+
+.placeholder-text {
+  color: #999; /* Placeholder text color */
+}
+
+.file-name {
+  margin-left: 10px;
+  max-width: 250px;
+  word-wrap: break-word; /* Allow text to wrap */
+  white-space: normal; /* Allow normal text wrapping */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.full-file-name {
+  max-width: none; /* Allow full width for the file name */
+  white-space: initial; /* Allow text wrapping for the full name */
+}
+
+/* Style for the file name when it is moved */
+
+.file-upload-icon {
+  cursor: pointer;
+  max-width: 24px; /* Adjust the size as needed */
+  max-height: 24px; /* Adjust the size as needed */
+}
+
+/* Style the password input container */
+.password-input {
+  position: relative;
+}
+
+/* Style the password input fiel  d */
+.password-input input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.password-input input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+/* Style the password toggle icon */
+.password-icon {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+}
+/* Add this CSS to your existing CSS file or update it accordingly */
+.skill-matrix {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5px;
+  background-color: white;
+}
+
+.skill {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.remove-skill {
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 16px;
+} 
+

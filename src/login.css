@@ -1,0 +1,112 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #2980b9, #6dd5fa); 
+  overflow: hidden;
+}
+
+/* Style the left-side image container */
+.login-image-container {
+  max-width: 50%;
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+/* Style the image with a corner shape and light shadow */
+.login-image {
+  max-width: 70%;
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+}
+
+/* Style the right-side login content */
+.login-content {
+  padding: 40px; /* Increase padding for more space */
+  text-align: left; /* Align the content to the left */
+  width: 300px;
+  height: 360px; /* Increase height for more space */
+  margin-right: 20px; /* Adjust the right margin as needed */
+  position: relative; /* Add relative positioning to the container */
+  background-color: transparent; /* Transparent background color */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove shadow */
+}
+.portal-text {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  animation: colorChange 1s linear infinite alternate; /* Add animation */
+}
+
+/* Define the animation keyframes */
+@keyframes colorChange {
+  from {
+    color: #d2cf00; /* Start color (a shade of blue) */
+  }
+  to {
+    color: #e622b2; /* End color (a shade of orange) */
+  }
+}
+
+/* Style the "Welcome" text at the top-center */
+.welcome-container {
+  text-align: center;
+  margin-top: 10px; /* Adjust margin-top for more spacing */
+}
+
+.welcome-text {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Style the input container for Email and Password */
+.input-container {
+  margin-top: 20px; /* Add margin for spacing */
+
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px; /* Adjust margin-top for spacing */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a light shadow */
+  border: 1px solid #ccc;
+}
+/* Style the "New User?" line at the bottom-center */
+.new-user-text {
+  position: absolute;
+  bottom: 20px; /* Add margin to the bottom for spacing */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.button {
+  background-color: #090909; /* Change to your desired button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0b7b0b; /* Change to a different color on hover if desired */
+}
+
